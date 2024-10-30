@@ -10,6 +10,7 @@ export default function Home() {
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <h1 className="text-7xl font-bold">Hello BTA</h1>
         <h3>This is a demo</h3>
+        {process.env.API_KEY ?? 'No API key'}
         <div className="flex  gap-6">
           <Button variant="default" size="default">
             Button
